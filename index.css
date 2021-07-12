@@ -10,7 +10,7 @@ html
 }
 body
 {
-    background-color: rgb(255, 255, 255);
+    background-color: hsl(0, 0%, 95%);
     height: 100%;
 }
 
@@ -30,7 +30,7 @@ body
 @media screen and (min-width: 1200px) {
     .content-box
 {
-    margin: 25em 20vw 25em 20vw;
+    margin: 10em 20em;
     display: flex;
     flex-direction: row;
     align-items: stretch;
