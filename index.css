@@ -1,0 +1,112 @@
+:root
+{
+    --orange: hsl(31, 77%, 52%);
+    --lightgreen: hsl(184, 100%, 22%);
+    --darkgreen: hsl(179, 100%, 13%)
+}
+html
+{
+    height: 100%;
+}
+body
+{
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+}
+
+.content-box
+{
+    margin: 5em 1em;
+    border-radius: 8px;
+
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+} 
+
+@media screen and (min-width: 1200px) {
+    .content-box
+{
+    margin: 25em 20vw 25em 20vw;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+}
+}
+
+.content-item
+{
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+@media screen and (min-width: 1200px) {
+    .content-item
+{
+    padding-bottom: 3em;
+    flex: 1;
+}
+}
+
+.content-item:nth-child(1)
+{
+    background-color: var(--orange);
+}
+.content-item:nth-child(1) button
+{
+    color: var(--orange);
+}
+
+.content-item:nth-child(2)
+{
+    background-color: var(--lightgreen);
+}
+.content-item:nth-child(2) button
+{
+    color: var(--lightgreen);
+}
+
+.content-item:nth-child(3)
+{
+    background-color: var(--darkgreen);
+}
+.content-item:nth-child(3) button
+{
+    color: var(--darkgreen);
+}
+
+.content-item h1
+{
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+
+.content-item p
+{
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.5em;
+}
+
+.content-item button
+{
+    margin-top: 1em;
+    width: 10em;
+    height: 3.25em;
+    border-radius: 25px;
+    border-style: none;
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+@media screen and (min-width: 1200px) {
+    .content-item button
+{
+    margin-top: 3em;
+}
+}
